@@ -9,7 +9,9 @@ but in order to accomplish those two things you’re going to need to learn how 
 -Delete rows from a list
 -Save and load user data
 
+Uses ObservableObject and UserDefaults
+
 https://www.hackingwithswift.com/books/ios-swiftui/iexpense-introduction
 
 # ScreenShots
-![Moose Times Screenshot](<https://github.com/clearlynow/iexpense/blob/main/iexpense.gif>)
+![iExpense Screenshot](<https://github.com/clearlynow/iexpense/blob/main/iexpense.gif>)
