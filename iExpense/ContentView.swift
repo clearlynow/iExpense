@@ -31,7 +31,7 @@ class Expenses: ObservableObject {
 }
 
 struct ExpenseItem: Identifiable, Codable {
-    let id = UUID()
+    var id = UUID()
     let name: String
     let type: String
     let amount: Int
@@ -56,6 +56,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
+            VStack{
             List {
                 ForEach(expenses.items) { item in
                     HStack {
@@ -73,6 +74,7 @@ struct ContentView: View {
                 .onDelete(perform: removeItems)
             }
             .navigationBarTitle("iExpense")
+            }
             .navigationBarItems(leading: EditButton(),
                 trailing: Button(action: {
                     self.showingAddExpense = true
